@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: authn
+  cloud:
+    config:
+      enabled: false
+
+  datasource:
+    url: jdbc:postgresql://localhost:5332/users
+    username: ushwetam
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      format_sql: true
+    show-sql: false
+
